@@ -3,7 +3,7 @@ try:
     def cli():
         global args
         parser = argparse.ArgumentParser()
-        parser.add_argument('-u', '--usb', help="USB To inject Backdoor to. USB Needs to be mounted!\nHow to mount USB: pmount /dev/sda2")
+        parser.add_argument('-u', '--usb', help="USB To inject Backdoor to. USB Needs to be mounted!\nHow to mount USB: pmount /dev/sdc1")
         parser.add_argument('-l', '--lhost', help="Listen HOST For the backdoor\nE.G.: 192.168.1.3")
         args = parser.parse_args()
     def print_red(msg):
