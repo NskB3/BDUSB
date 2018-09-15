@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 try:
     import os, time, sys, argparse
     def cli():
